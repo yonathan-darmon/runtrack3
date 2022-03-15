@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let allowedKeys = {
-        37: 'left',
-        38: 'up',
-        39: 'right',
-        40: 'down',
-        65: 'a',
-        66: 'b'
+        ArrowLeft: 'left',
+        ArrowUp: 'up',
+        ArrowRight: 'right',
+        ArrowDown: 'down',
+        a: 'a',
+        b: 'b'
     }
 
     let konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a']
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let konamiCodePosition = 0;
 
     document.addEventListener('keydown', function (e) {
-        var key = allowedKeys[e.keyCode]
+        var key = allowedKeys[e.key]
         var requiredKey = konamiCode[konamiCodePosition]
 
         if (key == requiredKey) {
