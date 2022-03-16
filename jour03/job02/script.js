@@ -15,8 +15,6 @@ jQuery(document).ready(function ($) {
     })
 
     function click() {
-        console.log(point)
-
         block.push($(this).attr('id'))
         $(this).appendTo($("#rangees"))
         $(this).removeClass('clickable')
