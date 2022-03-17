@@ -13,17 +13,18 @@
     <title>Document</title>
 </head>
 <body>
+<button id="start">Start</button>
 <div id="container">
     <ul id="parent">
-        <li><img src="1.PNG" alt=""></li>
-        <li><img src="4.PNG" alt=""></li>
-        <li><img src="7.PNG" alt=""></li>
-        <li><img src="2.PNG" alt=""></li>
-        <li><img src="5.PNG" alt=""></li>
-        <li><img src="8.PNG" alt=""></li>
-        <li><img src="3.PNG" alt=""></li>
-        <li><img src="6.PNG" alt=""></li>
-        <li><img src="9.PNG" alt=""></li>
+        <li><img src="34-01.png" id="1" alt=""></li>
+        <li><img src="34-02.png" id="2" alt=""></li>
+        <li><img src="34-03.png" id="3" alt=""></li>
+        <li><img src="34-04.png" id="4" alt=""></li>
+        <li><img src="34-05.png" id="5" alt=""></li>
+        <li><img src="34-06.png" id="6" alt=""></li>
+        <li><img src="34-07.png" id="7" alt=""></li>
+        <li><img src="34-08.png" id="8" alt=""></li>
+        <li><img src="34-09.png" id="9" alt=""></li>
     </ul>
 </div>
 </body>
