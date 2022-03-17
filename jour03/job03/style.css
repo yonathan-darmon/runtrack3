@@ -24,13 +24,14 @@ ul {
 }
 ul li {
     width: 30%;
-    margin-top: 3px;
+    margin-top: 10px;
     text-align: center;
-    padding-top: 1rem;
+    font-size: 2rem;
+    padding-top: 2rem;
 
 }
 ul li img{
-    width: 100%;
+    width: 95%;
 }
 
 .empty{
