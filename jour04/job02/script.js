@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
         }
     }
 
-    jsonValueKey('city', {
+    jsonValueKey('creation', {
             "name": "La Plateforme_",
             "address": "8 rue d'hozier",
             "city": "Marseille",
