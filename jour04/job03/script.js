@@ -22,6 +22,7 @@ jQuery(document).ready(function ($) {
             })
         let select = document.querySelector('select')
         $('#filtrer').click(function () {
+            console.log(select.value)
             fetch('pokemon.json')
                 .then(response =>response.json())
                 .then(data=>{
