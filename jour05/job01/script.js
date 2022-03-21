@@ -3,14 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         const myform = new FormData(form);
+        console.log(myform)
         fetch('connexion.php', {
             method: 'POST',
             body: myform
         }).then(response => response.text())
             .then(data => {
-                var err = document.createElement('p')
-                err.innerHTML=data
-                document.body.append(err)
+               console.log(data)
             })
 
 

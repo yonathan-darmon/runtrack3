@@ -22,6 +22,15 @@
     <title>Document</title>
 </head>
 <body>
-
+<?php if (!isset($_SESSION['nom'])):
+?>
+<form id="connect">
+    <label for="log">Log</label>
+    <input type="text" id="log" name="log">
+    <label for="pass">pass</label>
+    <input type="text" id="pass" name="pass">
+    <button id="connection">login</button>
+</form>
+<?php endif;?>
 </body>
 </html>
