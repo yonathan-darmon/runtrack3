@@ -1,0 +1,33 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.section{
+    background-color: #88c1d0;
+    min-height: 100px;
+    width: 100vh;
+    margin-top: 50px;
+margin-left: 25px;
+
+}
+@media all and (min-width: 768px) and (max-width: 1599px) {
+    body{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section{
+        width: 45%;
+    }
+}
+@media all and (min-width: 1600px) {
+    .section{
+        width: 25%;
+    }
+    body{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+}
