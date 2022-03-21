@@ -1,4 +1,5 @@
 <?php
+var_dump($_POST);
 function insert($nom,$prenom,$email,$password){
     $bdd = new PDO("mysql:host = localhost ; dbname=utilisateurs", 'root', '');
     $var=$bdd->prepare('INSERT INTO utilisateurs(nom,prenom,email,password) VALUES (?,?,?,?)');
@@ -16,7 +17,7 @@ function insert($nom,$prenom,$email,$password){
     <title>Document</title>
 </head>
 <body>
-<form action="#" method="post">
+<form method="post" id="form">
     <label for="nom">Nom</label>
     <input type="text" id="nom" required>
     <label for="prenom">Prenom</label>
@@ -27,7 +28,7 @@ function insert($nom,$prenom,$email,$password){
     <input type="text" id="password"required>
     <label for="passwordverify">password verify</label>
     <input type="password" id="passwordverify">
-    <input type="submit" name="valider" value="valider">
+    <button type="submit" name="valider" id="valider" >Valider</button>
 
 
 </form>
